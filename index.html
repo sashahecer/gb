@@ -32,8 +32,8 @@ ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
 ctx.fillStyle = '#0095DD';
 ctx.fill();
 ctx.closePath();
-x -= dx;
-y -= dy;
+x += dx;
+y += dy;
 if(y + dy > canvas.height || y + dy < 0) {
  dy = -dy;
 }
