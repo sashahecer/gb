@@ -39,11 +39,11 @@ function draw() {
   y += dy;
   if(x + dx > canvas.width || x + dx < 0){
   dx = -dx;
-  ballRadius = ballRadius + ballRadius;
+  ballRadius = ballRadius + 2;
   }
   if(y + dy > canvas.height || y + dy < 0){
   dy = -dy;
-  ballRadius = ballRadius + ballRadius;
+  ballRadius = ballRadius + 4;
   }
   
 }
