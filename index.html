@@ -37,13 +37,13 @@ function draw() {
   drawBall();
   x += dx;
   y += dy;
-  if(x + dx > canvas.width || x + dx < 0){
+  if(x + dx > canvas.width || x + dx < ballRadius){
   dx = -dx;
-  ballRadius = ballRadius + 2;
+   
   }
-  if(y + dy > canvas.height || y + dy < 0){
+  if(y + dy > canvas.height || y + dy < ballRadius){
   dy = -dy;
-  ballRadius = ballRadius + 4;
+   
   }
   
 }
