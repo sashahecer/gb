@@ -20,6 +20,7 @@ margin: 0;
 <script>
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
+const N = Math.random();
 let x = canvas.width / 2;
 let y = canvas.height - 30;
 let dx = 2;
@@ -40,12 +41,13 @@ function draw() {
   y += dy;
   if(x + dx > canvas.width || x + dx < ballRadius){
   dx = -dx;
-   
+   Math.random();
   }
   if(y + dy > canvas.height || y + dy < ballRadius){
   dy = -dy;
-   
+   Math.random();
   }
+console.log(`N=${N}`);
   
 }
 setInterval(draw, 10);
