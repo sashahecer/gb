@@ -26,6 +26,7 @@ let y = canvas.height - 30;
 let dx = 2;
 let dy = -2;
 let color = '0095DD';
+let N = 0;
 const ballRadius = 10;
 function drawBall(){
   ctx.beginPath();
@@ -41,16 +42,16 @@ function draw() {
   y += dy;
   if(x + dx > canvas.width || x + dx < ballRadius){
   dx = -dx;
-   Math.random()
+  N = Math.random()
   }
   if(y + dy > canvas.height || y + dy < ballRadius){
   dy = -dy;
-   Math.random()
+  N = Math.random()
   }
  if(N >= 0.5){
- let color = '0095DD'
+ color = '0095DD'
  } else {
- let color = '0055DD'
+ color = '0055DD'
  }
 console.log(`N=${N}`);
   
