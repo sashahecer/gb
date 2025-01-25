@@ -59,18 +59,10 @@ if (rightPressed && paddleX < canvas.width - paddleWidth) {
   y += dy;
   if(x + dx > canvas.width || x + dx < ballRadius){
   dx = -dx;
-  N = Math.random()
   }
   if(y + dy > canvas.height || y + dy < ballRadius){
   dy = -dy;
-  N = Math.random()
   }
- if(N >= 0.5){
- color = '#0095DD'
- } else {
- color = '#0055DD'
- }
-console.log(`N=${N}`);
   
 }
 setInterval(draw, 10);
