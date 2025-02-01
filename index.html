@@ -60,8 +60,8 @@ if (rightPressed && paddleX < canvas.width - paddleWidth) {
   if(x + dx > canvas.width || x + dx < ballRadius){
   dx = -dx;
   }
-  if(y + dy > canvas.height || y + dy < ballRadius){
-  dy = -dy;
+  if(y + dy < ballRadius) {
+   dy = -dy
   }
   
 }
