@@ -62,13 +62,18 @@ if (rightPressed && paddleX < canvas.width - paddleWidth) {
   }
   if(y + dy < ballRadius) {
    dy = -dy;
-  }
-  if(X1 < paddleX && X1 < (paddleX + paddleWidth)){
+  } else if (y = dy > cavas.height - ballRadius) {
+   if (x > paddleX && x < paddleX + paddleWidth){
    dy = -dy;
+  } else {
+   alert('GAME OVER');
+   clearInterval(interval); // End game
+   document.location.reload();
   }
+
   
 }
-setInterval(draw, 10);
+const interval = setInterval(draw, 10);
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
 
