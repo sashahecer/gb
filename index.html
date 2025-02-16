@@ -65,6 +65,7 @@ if (rightPressed && paddleX < canvas.width - paddleWidth) {
   } else if (y = dy > cavas.height - ballRadius) {
    if (x > paddleX && x < paddleX + paddleWidth){
    dy = -dy;
+   }
   } else {
    alert('GAME OVER');
    clearInterval(interval); // End game
