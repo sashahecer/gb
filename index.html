@@ -62,7 +62,7 @@ if (rightPressed && paddleX < canvas.width - paddleWidth) {
   }
   if(y + dy < ballRadius) {
    dy = -dy;
-  } else if (y = dy > cavas.height - ballRadius) {
+  } else if (y + dy > cavas.height - ballRadius) {
    if (x > paddleX && x < paddleX + paddleWidth){
    dy = -dy;
   } else {
